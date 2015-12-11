@@ -25,4 +25,5 @@ To configure the plugin, go to __WooCommerce > Settings__ from the left hand men
 * __Payment form design number__  - choose number of design which described on [Onpay.ru site](http://onpay.ru/kak-eto-rabotaet/formy-oplaty-vid-i-nastrojka).
 
 ##TODOs:
-1. Implementing of refunds
+1. logs for debugging.
+2. refunds.
