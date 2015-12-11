@@ -21,7 +21,7 @@ Allows you to accept Yandex.Money, WebMoney, VISA and MasterCard, as well as man
 Order status changes to "processing" after successful payment.
 
 = Contribute =
-To contribute to this plugin feel free to fork it on GitHub [Voguepay Woocommerce Payment Gateway on GitHub](https://github.com/tubiz/voguepay-woocommerce-payment-gateway)
+To contribute to this plugin feel free to fork it on GitHub [Onpay Woocommerce Payment Gateway on GitHub](https://github.com/animir/woocommerce-onpay-gateway)
 
 
 == Installation ==
