@@ -193,7 +193,7 @@ function init_onpay_gateway_class() {
             $amount = floatval($request['balance']['amount']);
             if($this->onpay_validate($request, $pay['signature'])) {
                 $order = wc_get_order( $request['pay_for'] );
-                if (floatval($order->order_total === $amount)) {
+                if (floatval($order->order_total) === $amount) {
                     $order->payment_complete();
                     $order->add_order_note('Paid via Onpay');
                     $payOut['status'] = 'true';
