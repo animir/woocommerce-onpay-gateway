@@ -26,4 +26,6 @@ To configure the plugin, go to __WooCommerce > Settings__ from the left hand men
 
 ##TODOs:
 1. logs for debugging.
-2. refunds.
+2. implemet all error messages from https://github.com/OnpayGuy/class/blob/master/onpay.class/onpay.class.php
+3. refunds.
+ 
