@@ -46,8 +46,8 @@ return array(
         'class'       => 'wc-enhanced-select',
         'default'     => 'yes',
         'options'     => array(
-            'yes' => __('yes', 'woocommerce'),
-            'no'  => __('no', 'woocommerce')
+            'true' => __('yes', 'woocommerce'),
+            'false'  => __('no', 'woocommerce')
         )
     ),
     'onpay_form_id' => array(
