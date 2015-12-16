@@ -128,6 +128,7 @@ function init_onpay_gateway_class() {
                 ."&convert=yes"
                 ."&md5=".$onpay_md5
                 ."&user_email=".urlencode($order->billing_email)
+                ."&user_phone=".urlencode($order->billing_phone)
                 ."&url_success_enc=".esc_url( add_query_arg( 'utm_nooverride', '1', $this->get_return_url( $order ) ) )
                 ."&url_fail_enc=".esc_url( $order->get_cancel_order_url() );
             return array(
