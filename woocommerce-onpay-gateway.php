@@ -244,7 +244,6 @@ function init_onpay_gateway_class() {
         public function onpay_callback()
         {
             $request = $this->onpay_get_request();
-			file_put_contents('/tmp/onpay_request', $request);
             $errorResponse = array(
                 'status' => 'false',
                 'pay_for' => isset($request['pay_for']) ? $request['pay_for'] : '',
