@@ -191,10 +191,10 @@ function init_onpay_gateway_class() {
                 'pay_for' => $request['pay_for'],
                 'key' => $this->onpay_key,
             );
-            $amount = floatval($request['balance']['amount']);
+            $amount = floatval($request['order']['from_amount']);
             if($this->onpay_validate($request, $pay['signature'])) {
                 $order = wc_get_order( $request['pay_for'] );
-                if (floatval($order->order_total) === $amount) {
+                if (floatval($order->order_total) <= $amount) {
                     $order->payment_complete();
                     $order->add_order_note('Paid via Onpay');
                     $payOut['status'] = 'true';
@@ -244,6 +244,7 @@ function init_onpay_gateway_class() {
         public function onpay_callback()
         {
             $request = $this->onpay_get_request();
+			file_put_contents('/tmp/onpay_request', $request);
             $errorResponse = array(
                 'status' => 'false',
                 'pay_for' => isset($request['pay_for']) ? $request['pay_for'] : '',
