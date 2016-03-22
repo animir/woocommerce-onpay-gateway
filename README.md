@@ -6,6 +6,11 @@ Onpay.ru Woocommerce Payment Gateway allows you to accept payments on your Wooco
 * Allows you to accept Yandex.Money, WebMoney, VISA and MasterCard, as well as many others.
 * Order status changes to "processing" after successful payment.
 
+##Configure Onpay:
+1. Go to https://secure.onpay.ru/merchants/edit
+2. Set API URL to "http://your-site.ru/wc-api/onpay"
+3. Set "Тип API" to "Https2"
+
 ##Manual Installation:
 1. Download the plugin files and copy to "wp-content/plugins" directory
 2. Login to admin and activate the plugin.
